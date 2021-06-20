@@ -1,1 +1,8 @@
-
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_contest
+    username: root
+    password: 529MysqLmysqL529AbETKa
