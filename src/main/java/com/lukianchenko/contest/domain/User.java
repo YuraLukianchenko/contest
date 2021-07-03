@@ -14,6 +14,7 @@ import javax.persistence.JoinColumn;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.ColumnDefault;
 
 @Entity
 @Getter
@@ -26,6 +27,7 @@ public class User {
   private Integer id;
   private String username;
   private String password;
+  private Integer level = 1;
 
   @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
   @CollectionTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"))
