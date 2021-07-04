@@ -1,5 +1,5 @@
 package com.lukianchenko.contest.domain;
 
 public enum Role {
-  USER;
+  USER, LEVEL2, LEVEL3;
 }
